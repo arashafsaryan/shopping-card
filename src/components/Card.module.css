@@ -1,0 +1,138 @@
+.card {
+  width: 150px;
+  margin: 10px;
+  padding: 7px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  border: 2px dashed #e2e2e2;
+  border-radius: 10px;
+}
+.card img {
+  width: 115px !important;
+  height: 115px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: auto;
+}
+.card h3 {
+  color: #fe5d42;
+  font-size: 0.6rem;
+}
+.card p {
+  color: #666;
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin: 10px 0px 15px;
+}
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.actions a {
+  font-size: 0.9rem;
+  height: 20px;
+  color: #fe5d42;
+  cursor: pointer;
+}
+.actions div {
+  display: flex;
+  align-items: center;
+}
+.actions div span {
+  width: 10px;
+  font-size: 0.6rem;
+  text-align: center;
+  margin: 0 5px;
+  color: #323232;
+}
+.actions div button {
+  background-color: #fe5d42;
+  color: #ffffff;
+  border: none;
+  font-size: 0.8rem;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  padding: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .card {
+    width: 200px;
+  }
+  .card img {
+    width: 150px !important;
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 250px;
+    border-radius: 20px;
+  }
+  .card img {
+    width: 210px !important;
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+  .actions a {
+    font-size: 1.5rem;
+    height: 25px;
+  }
+  .actions div span {
+    width: 30px;
+    font-size: 1.1rem;
+    color: #323232;
+  }
+  .actions div button {
+    font-size: 1.7rem;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .card {
+    width: auto;
+    margin: 10px auto;
+  }
+  .card img {
+    width: 180px !important;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    font-size: 0.8rem;
+  }
+  .card p {
+    font-size: 0.7rem;
+  }
+  .actions a {
+    font-size: 1.1rem;
+  }
+  .actions div span {
+    width: 20px;
+    font-size: 1rem !important;
+  }
+  .actions div button {
+    font-size: 1.1rem;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+  }
+}

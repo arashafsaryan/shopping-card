@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 500px;
+  width: 100%;
+}
+.container img {
+  width: 200px;
+  height: 200px;
+  padding: 15px 25px;
+  background-color: #fff;
+  border: 2px dashed #fe5d42;
+  border-radius: 10px;
+  margin: 10px;
+}
+.information {
+  width: auto !important;
+  border: 2px dashed #e2e2e2;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.information h3 { 
+  width: auto;
+  color: #fe5d42;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.description {
+  color: gray;
+  width: auto;
+  text-align: justify;
+  font-size: 0.7rem;
+  margin-bottom: 40px;
+}
+.category {
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+}
+.price {
+  font-size: 0.7rem;
+}
+.category svg,
+.information span svg {
+  color: #fe5d42;
+  margin-right: 10px;
+  font-size: 0.7rem;
+}
+.information div {
+  display: flex;
+  justify-content: space-between;
+}
+.information a {
+  display: flex;
+  align-items: center;
+  background-color: #fe5d42;
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.6rem;
+}
+.information a svg {
+  margin-right: 10px;
+  font-size: 0.6rem;
+}
+@media (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    min-height: 700px;
+    width: auto !important;
+  }
+  .container img {
+    width: 30%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .information {
+    width: 70%;
+    border-radius: 30px;
+  }
+  .information h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .description {
+    width: 500px;
+    font-size: 1.1rem;
+  }
+  .category {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .category svg,
+  .information span svg {
+    font-size: 16px;
+  }
+  .information a {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  .information a svg {
+    font-size: 16px;
+  }
+}
